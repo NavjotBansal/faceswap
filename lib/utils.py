@@ -84,7 +84,8 @@ class _Backend():  # pylint:disable=too-few-public-methods
         return fs_backend.lower()
 
     def _configure_backend(self):
-        """ Get user input to select the backend that Faceswap should use.
+        """ Get user 
+        to select the backend that Faceswap should use.
 
         Returns
         -------
@@ -93,7 +94,7 @@ class _Backend():  # pylint:disable=too-few-public-methods
         """
         print("First time configuration. Please select the required backend")
         while True:
-            selection = input("1: AMD, 2: CPU, 3: NVIDIA: ")
+            selection = "3"
             if selection not in ("1", "2", "3"):
                 print("'{}' is not a valid selection. Please try again".format(selection))
                 continue
